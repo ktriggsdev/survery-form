@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Galactysy Records Survey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Galactysy Records Survey Form</h1>
+    <p id="description">Thank you for taking the time to improve our service</p>
+    <form id="survey-form">
+      <label id="name-label">Name: <input id="name" type="text" placeholder="Your Name" required/></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="someone@email.com" required/></label>
+      <label id="number-label">Age: <input id="number" type="number" min="13" max="120" placeholder="18"/></label>
+      <label>How did you find us?
+        <select id="dropdown">
+          <option>(Choose an Option)</option>
+          <option>Google</option>
+          <option>Email</option>
+          <option>A Friend</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <p>What is your favourite feature?</p>
+      <label> <input name="features" type="radio" value="spotify-discovery"/> Spotify Discovery Mode </label>
+      <label><input type="radio" name="features" value="charts"/> Chart Submission</label>
+      <label><input type="radio" name="features" value="support"/>Priority Support</label>
+      <label><input type="radio" name="features" value="playlists"/>Playlist Submission</label>
+      </label>
+      <p>What would you like to see improved?</p>
+      <label><input type="checkbox" value="priority-support">Priority Support</label>
+      <label><input type="checkbox" value="playlisting">Playlisting</label>
+      <label><input type="checkbox" value="release-date">Release Date Times</label>
+      <label><input type="checkbox" value="chart">Chart Submission</label>
+      <label><input type="checkbox" value="promo">Promo</label>
+      <label>Any Further questions?
+        <textarea id="text" ></textarea>
+      </label>
+      <input id="submit" type="submit"/>
+    </form>
+  </body>
+</html>
